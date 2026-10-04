@@ -1,0 +1,4 @@
+[target.x86_64-pc-windows-gnu]
+# Avoid a generated bcryptprimitives import library when the bundled GNU linker
+# tools do not include an assembler; this API remains cryptographically secure.
+rustflags = ["--cfg", "getrandom_backend=\"windows_legacy\""]

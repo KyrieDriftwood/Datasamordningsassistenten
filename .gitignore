@@ -1,0 +1,25 @@
+artifacts/
+
+# Virtuell miljö för den aktiva applikationen (Steg 4, Fas 1). Källkoden
+# spåras i git; själva den installerade miljön ska inte checkas in.
+.venv/
+
+# Frozen runnable backup of the pre-existing app (large binary env/build output).
+# The source files under .old/python_v5 (app*.py, src/, tests/, docs/) ARE tracked;
+# only the heavy, machine-specific runtime artifacts below are excluded.
+.old/python_v5/.venv/
+.old/python_v5/rust_dwg_extractor/target/release/*.dll
+.old/python_v5/rust_dwg_extractor/target/release/rust_dwg_extractor.exe
+__pycache__/
+*.pyc
+tb_sync_rust/target/
+
+# Windows packaging and local native build outputs.
+build/
+dist/
+.pytest_cache/
+rust_dwg_extractor/target/
+dwg_pdf_backend/target/
+ErrorReports/
+plot.log
+*.egg-info/

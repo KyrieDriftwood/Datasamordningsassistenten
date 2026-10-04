@@ -1,0 +1,8 @@
+[package]
+name = "tb-sync"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+quick-xml = "0.37"
+zip = { version = "2.2", default-features = false, features = ["deflate"] }

@@ -1,0 +1,17 @@
+[package]
+name = "rust_dwg_extractor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.70"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+# Panik i FFI-nära kod ska avsluta processen direkt; Python-bryggan tolkar
+# en avslutad worker/batch som fel för de berörda filerna.
+panic = "abort"

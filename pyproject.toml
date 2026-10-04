@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datasamordningsassistent"
+version = "5.3.0"
+description = "Offline desktop application for document and DWG metadata coordination"
+requires-python = ">=3.11"
+dependencies = [
+    "watchdog>=6.0.0",
+    "PySide6>=6.7.0",
+    "pypdf>=6.0,<7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+build = ["pyinstaller>=6.16,<7"]
+
+[tool.setuptools]
+packages = ["app", "app.controllers", "app.ui", "backend", "metadata", "dwg", "config", "acc", "tb"]
+
+[tool.setuptools.package-data]
+"app.ui" = ["theme_assets/*.svg"]
