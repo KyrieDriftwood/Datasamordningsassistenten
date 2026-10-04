@@ -89,7 +89,8 @@ Before any GitHub Release:
 
 1. Authenticate and verify the target repository's visibility and contents.
 2. Review all exported material for confidentiality and credentials.
-3. Decide the first-party source license with the owner; none is assumed.
+3. First-party source license: **GPL-3.0-only**, selected by the owner on
+   2026-10-04; the complete GPLv3 text is in the repository's `LICENSE`.
 4. Review GPLv3-or-later obligations for LibreDWG and the linked Rust reader,
    including corresponding source, build inputs and license notices.
 5. Include required notices and fulfill Qt/PySide6 and other bundled dependency

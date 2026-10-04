@@ -44,8 +44,11 @@ compatibility or parity with the private baseline.
 
 ## Licenses
 
-The repository's [MIT license](LICENSE) covers first-party source only.
-It does not relicense dependencies or authorize distributing their binaries.
+First-party source is licensed under the
+[GNU General Public License version 3](LICENSE), **GPL-3.0-only**
+(owner decision 2026-10-04). Later GPL versions are not automatically permitted.
+This declaration does not relicense dependencies or by itself fulfill their
+binary distribution requirements.
 LibreDWG is GPLv3-or-later, and PySide6/Qt has separate licensing conditions.
 Binary publication remains on hold pending dependency notices, corresponding
 source requirements and distribution review.
